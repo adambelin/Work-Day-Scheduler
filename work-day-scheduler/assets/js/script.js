@@ -5,7 +5,6 @@ let currentTime = moment(now).format("dddd MMM Do");
 $('#currentDay').html(currentTime);
 
 let currentHour = new Date(now).getHours()
-console.log(currentHour);
 
 $(document).ready(function() {
     for (let i=0; i < 9; i++){
@@ -23,3 +22,10 @@ $(document).ready(function() {
         }
     }
 });
+
+let saveData = function() {
+    let inputHour = $(".currentTime");
+    console.log(inputHour);
+}
+
+// $("#save").onClick()
