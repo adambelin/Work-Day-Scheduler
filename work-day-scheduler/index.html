@@ -18,6 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic.min.css" integrity="sha512-LeCmts7kEi09nKc+DwGJqDV+dNQi/W8/qb0oUSsBLzTYiBwxj0KBlAow2//jV7jwEHwSCPShRN2+IWwWcn1x7Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/style/style.css" />
     <title>Work Day Scheduler</title>
   </head>
@@ -29,54 +30,56 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
-      <div class ="row" id="9am">
+      <div class ="row">
         <div class="col-lg-2 hour">9am</div>
-        <div class="col-lg-8 currentTime"><input id="textInput"></input></div>
+        <input id="hour_0" class="col-lg-8 currentTime"></input>
         <div class="col-lg-2"><button class="saveBtn" id="save">Save</button></div>
       </div>
-      <div class ="row" id="10am">
+      <div class ="row">
         <div class="col-lg-2 hour">10am</div>
-        <div class="col-lg-8 currentTime"><input id="textInput"></input></div>
+        <input id="hour_1" class="col-lg-8 currentTime"></input>
         <div class="col-lg-2"><button class="saveBtn" id="save">Save</button></div>
       </div>
-      <div class ="row" id="11am">
+      <div class ="row">
         <div class="col-lg-2 hour">11am</div>
-        <div class="col-lg-8 currentTime"><input id="textInput"></input></div>
+        <input id="hour_2" class="col-lg-8 currentTime"></input>
         <div class="col-lg-2"><button class="saveBtn" id="save">Save</button></div>
       </div>
-      <div class ="row" id="12pm">
-        <div class="col-lg-2 hour">12am</div>
-        <div class="col-lg-8 currentTime"><input id="textInput"></input></div>
+      <div class ="row">
+        <div class="col-lg-2 hour">12pm</div>
+        <input id="hour_3" class="col-lg-8 currentTime"></input>
         <div class="col-lg-2"><button class="saveBtn" id="save">Save</button></div>
       </div>
-      <div class ="row" id="1pm">
+      <div class ="row">
         <div class="col-lg-2 hour">1pm</div>
-        <div class="col-lg-8 currentTime"><input id="textInput"></input></div>
+        <input id="hour_4" class="col-lg-8 currentTime"></input>
         <div class="col-lg-2"><button class="saveBtn" id="save">Save</button></div>
       </div>
-      <div class ="row" id="2pm">
+      <div class ="row">
         <div class="col-lg-2 hour">2pm</div>
-        <div class="col-lg-8 currentTime"><input id="textInput"></input></div>
+        <input id="hour_5" class="col-lg-8 currentTime"></input>
         <div class="col-lg-2"><button class="saveBtn" id="save">Save</button></div>
       </div>
-      <div class ="row" id="3pm">
+      <div class ="row">
         <div class="col-lg-2 hour">3pm</div>
-        <div class="col-lg-8 currentTime"><input id="textInput"></input></div>
+        <input id="hour_6" class="col-lg-8 currentTime"></input>
         <div class="col-lg-2"><button class="saveBtn" id="save">Save</button></div>
       </div>
-      <div class ="row" id="4pm">
+      <div class ="row">
         <div class="col-lg-2 hour">4pm</div>
-        <div class="col-lg-8 currentTime"><input id="textInput"></input></div>
+        <input id="hour_7" class="col-lg-8 currentTime"></input>
         <div class="col-lg-2"><button class="saveBtn" id="save">Save</button></div>
       </div>
-      <div class ="row" id="5pm">
+      <div class ="row">
         <div class="col-lg-2 hour">5pm</div>
-        <div class="col-lg-8 currentTime"><input id="textInput"></input></div>
+        <input id="hour_8" class="col-lg-8 currentTime"></input>
         <div class="col-lg-2"><button class="saveBtn" id="save">Save</button></div>
       </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    
   </body>
 </html>
