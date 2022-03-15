@@ -25,7 +25,6 @@ $(document).ready(function() {
 
 let saveData = function() {
     let inputHour = $(".currentTime");
-    console.log(inputHour);
 }
 
-// $("#save").onClick()
+$("#save").click(saveData);
