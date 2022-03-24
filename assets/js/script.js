@@ -1,21 +1,21 @@
 $(document).ready(function () {
 
-let textInput = $("#textInput");
+    let textInput = $(".textarea");
 
-let now = new Date($.now());
-let currentTime = moment(now).format("dddd MMM Do");
-$('#currentDay').html(currentTime);
+    let now = new Date($.now());
+    let currentDate = moment(now).format('dddd MMM Do');
+    $("#currentDay").html(currentDate);
 
-let currentHour = new Date(now).getHours()
+    let currentHour = new Date(now).getHours();
 
-    for (let i=0; i < 9; i++){
-        let id="#hour_" + i;
+    for (let i = 0; i < 9; i++) {
+        let id = "#hour-" + i;
         let hour = 9 + i;
 
-        if (hour < currentHour){
+        if (hour < currentHour) {
             $(id).addClass("past");
         }
-        else if(hour === currentHour){
+        else if (hour === currentHour) {
             $(id).addClass("present");
         }
         else {
@@ -24,17 +24,17 @@ let currentHour = new Date(now).getHours()
     }
 });
 
-$(".saveBtn").click(function (){
-    let value = $(this)
+$(".saveBtn").click(function () {
+    var value = $(this)
         .siblings(".textarea")
         .val();
 
-    let time = $(this)
-        .parent()
-        .attr("id");
+    var time = $(this)
+    .parent()
+    .attr("id");
 
     localStorage.setItem(time, value);
-    console.log(value);
+    console.log(value);    
 });
 
 $('#hour0 .textarea').val(localStorage.getItem("hour0"))
